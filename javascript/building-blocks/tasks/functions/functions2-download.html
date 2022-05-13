@@ -35,13 +35,16 @@
     const canvas = document.querySelector('canvas');
     const ctx = canvas.getContext('2d');
 
-    const x = 50;
+    const x = 150;
     const y = 60;
     const width = 100;
-    const height = 75;
-    const color = 'blue';
+    const height = 100;
+    const color = 'green';
 
     // Add your code here
+    ctx.fillStyle = color;
+    ctx.clearRect(x, y, width, height);
+    ctx.fillRect(x, y, width, height);
 
     // Don't edit the code below here!
 
