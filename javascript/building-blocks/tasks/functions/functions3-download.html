@@ -36,8 +36,7 @@
   }
 
   function chooseName(data) {
-    let index = random(0, data.length);
-    return data[index];
+    return data[random(0, data.length)];
   }
 
   para.textContent = chooseName(names);
