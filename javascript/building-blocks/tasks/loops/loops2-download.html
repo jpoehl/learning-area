@@ -41,6 +41,12 @@
     ]
 
     // Add your code here
+    for (let e = 0; e < phonebook.length; e++) {
+      if (phonebook[e].name === name) {
+        const number = document.createTextNode(phonebook[e].number);
+        para.appendChild(number);
+      }
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
