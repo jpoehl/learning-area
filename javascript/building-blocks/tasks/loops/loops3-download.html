@@ -40,8 +40,13 @@
     }
 
 
-    // Add your code here
-
+    while (i > 1) {
+      if (isPrime(i)) {
+        const primeNumber = document.createTextNode(`${i}, `);
+        para.appendChild(primeNumber);
+      }
+      i--;
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
